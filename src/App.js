@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
-import { Route, Switch, Redirect } from 'react-router-dom';
 import SignInSignUpPage from './pages/signin-signup/signin-signup.component';
 import Header from './components/header/header.component';
+
+import { Route, Switch, Redirect } from 'react-router-dom';
 import {auth, createUserProfileDocument} from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 import { connect } from 'react-redux';
+import './App.css';
 
 class App extends Component{
   
